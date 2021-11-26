@@ -1,0 +1,169 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(210, 46%, 95%);
+    padding: 1.5rem;
+    align-items: center;
+}
+
+#testimonials .testimonial-grid {
+    border-radius: 10px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    max-width: 380px;
+}
+
+#testimonials .testifier  {
+    display: flex;
+}
+
+#testimonials .testifier img {
+    width: 3rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+
+#testimonials .testifier-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#testimonials .testifier-info h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+#testimonials .testifier-info p {
+    color: hsla(0, 0%, 81%);
+    font-size: 1rem;
+}
+
+#testimonials .testimonial-grid h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    margin: 2rem 0;
+}
+
+#testimonials .testimonial-grid p {
+    color: hsla(0, 0%, 100%, 70%);
+    line-height: 1.5rem;
+}
+
+#testimonials .testimonial-grid-daniel {
+    background: url(Images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: hsl(263, 55%, 52%);
+}
+
+#testimonials .testimonial-grid-walters {
+    background-color: hsl(217, 19%, 35%);
+
+}
+
+#testimonials .testimonial-grid-harmon {
+    background-color: hsl(0, 0%, 100%);
+}
+
+#testimonials .testimonial-grid-abrams {
+    background-color: hsl(219, 29%, 14%);
+}
+
+#testimonials .testimonial-grid-whittle {
+background-color: white;
+}
+#testimonials .testimonial-grid-whittle p{
+    color: hsl(217, 19%, 35%);
+}
+#testimonials .testimonial-grid-whittle h2{
+    color: hsl(217, 19%, 35%);
+}
+#testimonials .testimonial-grid-whittle h3{
+    color: hsl(217, 19%, 35%);
+}
+#testimonials .testimonial-grid-harmon h3{
+    color: hsl(217, 19%, 35%);
+}
+#testimonials .testimonial-grid-harmon h2{
+    color: hsl(217, 19%, 35%);
+}
+#testimonials .testimonial-grid-harmon p{
+    color: hsl(217, 19%, 35%);
+}
+
+/*Media queries for tablet*/
+
+@media screen and (min-width: 500px) {
+    *, html {
+        font-size: 15px;
+    } 
+    
+    #testimonials .testimonial-grid {
+        max-width: 480px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+         font-size: 9px;
+         background-color: hsl(210, 46%, 95%);
+    }
+    
+    #testimonials {
+        display: grid;
+        grid-template: repeat(6, 1fr)/repeat(12, 1fr);
+        margin: auto;
+        grid-gap: 20px;
+        max-width: 1000px
+    }
+
+    #testimonials .testimonial-grid-daniel {
+        grid-area: 1 / 1 / 4 / 7;
+    }
+
+    #testimonials .testimonial-grid-walters {
+        grid-area: 1 / 7 / 4 / 10;
+    }
+
+    #testimonials .testimonial-grid-whittle {
+        grid-area: 1 / 10 / 7 / 13;
+    }
+
+    #testimonials .testimonial-grid-harmon {
+        grid-area: 4 / 1 / 7 / 4;
+    }
+
+    #testimonials .testimonial-grid-abrams {
+        grid-area: 4 / 4 / 7 / 10;
+    }
+
+    #testimonials .testimonial-grid {
+        margin-bottom: 0;
+        height: 100%;
+    }
+
+    #testimonials .testifier img {
+        width: 3rem;
+        height: 3rem;
+    }
+     
+    #testimonials .testimonial-grid p {
+        line-height: 2.5rem;
+    }
+
+}
+
